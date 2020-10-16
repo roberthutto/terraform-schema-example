@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "required_tags": {
+      "$ref": "#/definitions/required_tags"
+    }
+  },
+  "required": [ "required_tags"],
+  "definitions": {
+    "required_tags": {
+      "type": "object",
+      "properties": {
+        "application_id": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string",
+          "format": "email"
+        }
+      },
+      "required": [
+        "application_id",
+        "created_by"
+      ]
+    }
+  }
+}
