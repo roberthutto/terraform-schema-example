@@ -4,9 +4,12 @@
   "properties": {
     "required_tags": {
       "$ref": "#/definitions/required_tags"
+    },
+    "s3_bucket": {
+      "$ref": "#/definitions/s3_bucket"
     }
   },
-  "required": [ "required_tags"],
+  "required": [ "required_tags", "s3_bucket"],
   "definitions": {
     "required_tags": {
       "type": "object",
@@ -22,6 +25,18 @@
       "required": [
         "application_id",
         "created_by"
+      ]
+    },
+    "s3_bucket": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "(?!^(\\d{1,3}\\.){3}\\d{1,3}$)(^[a-z0-9]([a-z0-9-]*(\\.[a-z0-9])?)*$)"
+        }
+      },
+      "required": [
+        "name"
       ]
     }
   }
