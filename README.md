@@ -2,7 +2,7 @@
 
 This example project provides a way to do Terraform module input validation using standard `Json Schema` validation. 
 
-##Motivation 
+## Motivation 
 The motivation for doing this is that the recently released Terraform .13 variable 
 [validation rules](https://www.terraform.io/docs/configuration/variables.html#custom-validation-rules) provides a non-standard
 method of validating inputs with the following drawbacks!
@@ -13,7 +13,7 @@ method of validating inputs with the following drawbacks!
  * Error messages don't support interpolations. Results in ambiguous errors with Complex Types (List, Maps, Objects).
  
  
-##Why Json Schema?
+## Why Json Schema?
 
 [Json Schema](https://json-schema.org/) is a widely adopted standard with significant existing tooling in multiple languages.
 It provides a more general purpose and expressive way of validation that addresses all the concerns in the 
@@ -29,4 +29,4 @@ It provides a more general purpose and expressive way of validation that address
 </span><span style="color:#606366;background-color:#313335;">2 </span><span style="color:#a9b7c6;background-color:#2b2b2b;">  bucket = var.s3_bucket.name
 </span><span style="color:#606366;background-color:#313335;">3 </span><span style="color:#a9b7c6;background-color:#2b2b2b;">  tags = var.required_tags
 </span><span style="color:#606366;background-color:#313335;">4 </span><span style="color:#a9b7c6;background-color:#2b2b2b;">}</span></pre>
-##IDE Integration
+## IDE Integration
