@@ -57,5 +57,5 @@ defined in the schema.
 
 
 ## Custom Provider
-Future work is to provide a custom provider that provides a data source that does not require and external process and 
+Future work is to provide a custom provider that provides a data source that does not require an external process and 
 provides a simpler interface 
